@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="Username">Username</label>
+            <input type="text" placeholder="Username" required> <br><br>
+            <label for="Password">Password</label>
+            <input type="password" minlength="8" maxlength="15" placeholder="Password" required><br><br>
+            <label for="Email">E-mail</label>
+            <input type="email" placeholder="E-mail"><br><br>
+            <label for="ice-cream">Would you prefer  vanilla or chocolate flavour?</label>
+            <input id="choose" placeholder="Choose" required pattern="[Vv]anilla|[Cc]hocolate"><br><br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
