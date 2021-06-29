@@ -1,0 +1,23 @@
+*body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3 + pre{
+    color: rgb(187, 98, 111);
+}
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+}
+.notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+}
+.blockquote{
+    border: 2px cadetblue;
+    all: unset;
+}
+abbr[title]{
+    background-color: tomato;
+}
