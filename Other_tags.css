@@ -12,7 +12,18 @@ h3 + pre{
 }
 .notebox.warning {
     border-color: orange;
+    border-left-width: 3px;
     font-weight: bold;
+}
+.grocery li{
+    display: inline-flex;
+    list-style: none;
+    border: 2px solid palevioletred;
+    width: 150px;
+    height: 50px;
+}
+li{
+    border: 2px steelblue;
 }
 .blockquote{
     border: 2px cadetblue;
