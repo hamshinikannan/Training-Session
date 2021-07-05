@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Style</title>
+        
+        <style>
+            strong {
+              font-style: italic;
+              font-weight:normal;
+              color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="para" style="color: yellow">
+            Nice text
+        </p>
+        <p>Now <strong>strong text</strong> is italic and gray.</p>
+        
+        <script>
+            let para = document.getElementById("para");
+            console.log(para.style.color);
+            para.style.color = "blue";
+        </script>
+    </body>
+</html>
