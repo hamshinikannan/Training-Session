@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handling events</title>
+    </head>
+    <body>
+        <p>Click here</p>
+        <button>Click me(no handler)</button>
+        <p>This page turns violet when you hold the H key.</p>
+        <p>Press Control-Space to continue.</p>
+        
+        <script>
+            //window object
+            window.addEventListener("click", () => {
+                console.log("Welcome home");
+            });
+            //dom object
+            let button = document.querySelector("button");
+            button.addEventListener("click", () => {
+                console.log("Button clicked.");
+            });
+
+            //target
+            document.body.addEventListener("click", event => {
+                if (event.target.nodeName == "BUTTON") {
+                    console.log("Clicked", event.target.textContent);
+                }
+            });
+
+            //keyevents
+            window.addEventListener("keydown", event => {
+                if (event.key == "h") {
+                    document.body.style.background = "yellow";
+                }
+            });
+            window.addEventListener("keyup", event => {
+                if (event.key == "h") {
+                    document.body.style.background = "";
+                }
+            });
+
+            //modifier keys
+           
+            window.addEventListener("keydown", event => {
+                if (event.key == " " && event.ctrlKey) {
+                    console.log("Continuing!");
+                }
+            });
+        </script>
+    </body>
+</html>

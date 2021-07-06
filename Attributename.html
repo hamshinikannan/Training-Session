@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program for attribute name </title>
+</head>
+<body>
+    <p>College rating</p>
+    <p>
+        <input type="radio" name="rate" value="Very poor"> Very poor
+        <input type="radio" name="rate" value="Poor"> Poor
+        <input type="radio" name="rate" value="OK"> OK
+        <input type="radio" name="rate" value="Good"> Good
+        <input type="radio" name="rate" value="Very Good"> Excellent
+    </p>
+    <p>
+        <button id="College">Submit</button>
+    </p>
+    <script>
+        let btn = document.getElementById('College');
+
+        btn.addEventListener('click', () => {
+            let rating = document.getElementsByName('rate');
+            rates.forEach((rate) => {
+                if (rate.checked) {
+                    alert(`You rated: ${rate.value}`);
+                }
+            })
+        });
+    </script>
+</body>
+</html>

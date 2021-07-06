@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Page</title>
+        <style>
+            #display{
+                background-color:lightviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="date" type="submit" onclick="document.getElementById('display').innerHTML= Date()">Click</button>
+        <p id="display"></p>
+        <script>
+            var btn = document.querySelector(".date");
+
+            btn.addEventListener("mouseover", function(){
+              this.textContent = "Click here to see the date and time";  
+            })
+            btn.addEventListener("mouseout", function(){
+                this.textContent = "Click";
+            })
+        </script>
+    </body>
+</html>
