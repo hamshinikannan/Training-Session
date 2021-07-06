@@ -1,0 +1,34 @@
+*body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3 + pre{
+    color: rgb(187, 98, 111);
+}
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+}
+.notebox.warning {
+    border-color: orange;
+    border-left-width: 3px;
+    font-weight: bold;
+}
+.grocery li{
+    display: inline-flex;
+    list-style: none;
+    border: 2px solid palevioletred;
+    width: 150px;
+    height: 50px;
+}
+li{
+    border: 2px steelblue;
+}
+.blockquote{
+    border: 2px cadetblue;
+    all: unset;
+}
+abbr[title]{
+    background-color: tomato;
+}

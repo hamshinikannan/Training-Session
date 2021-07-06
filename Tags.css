@@ -1,0 +1,38 @@
+*body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: green;
+    font-size: 40px;
+}
+p::first-letter {
+  color: brown;
+  font-size: 40px;
+}
+li{
+    list-style-type: square;
+}
+.AloeVera{
+    color: lightcoral;
+    font-weight: bold;
+}
+body h1 + p.Garden{
+    background-color: burlywood;
+    padding: 100px;
+    border: 2px solid brown;
+}
+.contact{
+    border: 2px solid black;
+    background-color: rgb(202, 214, 207);
+}
+.contact li{
+    list-style-type: none;
+}
+footer{
+    background-color: black; 
+    color: white;
+    margin: 3px 3px;
+    padding: 2px;
+}
