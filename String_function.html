@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Function</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //slice
+            let str = "Apple, Banana, Kiwi";
+            document.getElementById("demo").innerHTML = str.slice(7,13); 
+            //replace
+            let text = "Please visit Microsoft!";
+            let newText = text.replace("Microsoft", "Aspire Systems");
+            //concatenate
+            let text1 = "Hello";
+            let text2 = "World";
+            let text3 = text1.concat(" ", text2);
+            //trim
+            let word = "       Hello World!        ";
+            word.trim();
+            //substring
+            let str = "Apple, Banana, Kiwi";
+            document.getElementById("demo").innerHTML = str.substring(7,13);
+        </script>
+    </body>
+</html>
