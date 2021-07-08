@@ -7,19 +7,13 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="DemoAssignment.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .mySlides{
-                display: none;
-                margin-top: 40px;
-            }
-        </style>
         <script src="DemoAssignment.js"></script>
     </head>
     <body>
         <header class="helpo_heading" >
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="HELPO" width="200">
+                    <img src="images/logo.png" alt="HELPO" width="100%">
                 </div>
                 <nav>
                     <div class="mainmenu">
@@ -34,7 +28,6 @@
 
                             </div>
                         </div>
-
                         <div class="main"><a href=""><span>PAGES</span></a> 
                             <div class="homemenu">
                                 <a href="">About</a>
@@ -97,20 +90,16 @@
                         </div>
                         <div class="main">
                             <a class="donate" href="validation.html">DONATE</a>
-
-                        </div>
-                            
+                        </div>       
                     </div>
                 </nav>
             </div>   
         </header>  
         <!----------------------------section ------------->
         <section>
-            
             <div class="slideshow-container" >
-                    <img class = "mySlides" src="images/causes.jpg" alt="Image" width="100%" height="500px" >
-                    <img class = "mySlides" src="images/children.jpg" alt="Image"width="100%" height="400px">
-                
+                    <img class = "mySlides" src="images/causes.jpg" alt="Image" width="100%" >
+                    <img class = "mySlides" src="images/children.jpg" alt="Image"width="100%">
             </div>
             <div class="cause">
                 <div class="cause-item-heading">
@@ -133,80 +122,73 @@
                 </div>
             </div>
         </section>   
-        
-            <div>
-                <img src="images/bottom-bg.png" alt="backgroundimg">
-            </div>
-        
+        <div>
+            <img src="images/bottom-bg.png" alt="backgroundimg">
+        </div>
         <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    
-                    <div class="app-logo">
-                        <img src="images/logo_white.png" alt=""><br>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-google-plus"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <div class="app-logo">
+                            <img src="images/logo_white.png" alt=""><br>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-google-plus"></a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Contacts</h3>
+                        <address>Elliott Ave, Parkville VIC 3052, <br>Melbourne Canada</address>
+                        <p>Phone: <a href="tel:+31859644725">+31859644725</a></p>
+                        <p>Email: <a href="mailto:support@helpo.org">support@helpo.org</a></p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Menu & Links</h3>
+                        <div id="links">
+                            <div class="option">
+                                <ul>
+                                    <li>Home</li>
+                                    <li>About</li>
+                                    <li>Pages</li>
+                                    <li>Causes</li>
+                                    <li>Blog</li>
+                                    <li>Contacts</li> 
+                                    <li>Elements</li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Donate</h3>
+                        <p>Help Us Change the Lives of <br> Children in World</p>
+                    </div>
+                    </div>
+                        <hr>
+                        <div class="">
+                            <p class="copyright">© 2020 Helpo Charity Template by Artureanec
+                            <p class="privacy"> <a href="">Term and Conditon </a><a href="">Privacy  </a></p>
+                        </div>
+                
                     </div>
                 </div>
-                <div class="footer-col-2">
-                    <h3>Contacts</h3>
-                    <address>Elliott Ave, Parkville VIC 3052, <br>Melbourne Canada</address>
-                    <p>Phone: <a href="tel:+31859644725">+31859644725</a></p>
-                    <p>Email: <a href="mailto:support@helpo.org">support@helpo.org</a></p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Menu & Links</h3>
-                    <div id="links">
-                        <div class="option">
-                            <ul>
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Pages</li>
-                                <li>Causes</li>
-                                <li>Blog</li>
-                                <li>Contacts</li> 
-                                <li>Elements</li>
-                              
-                            </ul>
-                        </div>   
-                    </div>
-                    
-                </div>
-                <div class="footer-col-4">
-                    <h3>Donate</h3>
-                    <p>Help Us Change the Lives of <br> Children in World</p>
-                </div>
             </div>
-            <hr>
-            <div class="">
-                <p class="copyright">© 2020 Helpo Charity Template by Artureanec
-                <p class="privacy"> <a href="">Term and Conditon </a><a href="">Privacy  </a></p>
-                
-                    
-            </div>
-                
-            </div>
-            </div>
-    </div>
-    <script>
-        var index =0;
-        slideshow();
-        function slideshow(){
-            var a = document.getElementsByClassName("mySlides");
-            for (var i=0; i<a.length; i++){
-                a[i].style.display="none";
+        </div>
+        <script>
+            var index =0;
+            slideshow();
+            function slideshow(){
+                var a = document.getElementsByClassName("mySlides");
+                for (var i=0; i<a.length; i++){
+                    a[i].style.display="none";
+                }
+                index++
+                if(index>a.length){
+                    index=1;
+                }
+                a[index-1].style.display ="block";
+                setTimeout(slideshow,3000);
             }
-            index++
-            if(index>a.length){
-                index=1;
-            }
-            a[index-1].style.display ="block";
-            setTimeout(slideshow,3000);
-        }
-    </script>
-        
+        </script>
     </body>
 </html>
