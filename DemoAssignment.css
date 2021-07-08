@@ -16,7 +16,7 @@
 .navbar{
     display: flex;
     align-items: center;
-    padding: 10px;
+    
 }
 nav{
     text-align: right;    
@@ -63,18 +63,17 @@ img {
     vertical-align: middle;
     
 }
-
-
 .lang{
     display: inline-block;
     margin-right: 40px;
     padding-left: 20px;
 }
-
-.slideshow-container {
-    max-width: 650px;
+.slideshow-container{
+    max-width: 100%;
 }
-
+.mySlides{
+    display: none;    
+}
 .donate{
     margin: 0;
     padding: 20px 20px ;
@@ -82,37 +81,18 @@ img {
     background-color: #efc940;
     align-items: center;
     justify-content: center;
-    
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .cause{
     display: flex;
     justify-content: space-evenly;
 }
 .cause-item-heading{
-      padding-top: 25px;
-      padding-left: 20px;
-      height: 350px;
-      width: 350px;
-      margin: 50px;
-      box-shadow: 1px 1px 5px 1px rgb(146,140,140);
+    padding-top: 25px;
+    padding-left: 20px;
+    height: 350px;
+    width: 350px;
+    margin: 50px;
+    box-shadow: 1px 1px 5px 1px rgb(146,140,140);
 }
 .cause-item-heading h6{
     color: #4a4c70;
@@ -120,7 +100,6 @@ img {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
-   
 }
 .cause-item-heading p{
     color: #777;
