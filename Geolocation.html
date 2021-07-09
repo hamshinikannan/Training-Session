@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation Assignment</title>
+    </head>
+    <body>
+        <button id = "find-me">Show my location</button><br/>
+        <p id = "status"></p>
+        <a id = "map-link" target="_blank"></a>
+        <input type="button" value="Get location" id="location">
+        <h1>Details of location</h1>
+
+        <script>
+            document.getElementById('location').addEventListener('click',()=>{
+                if(!navigator.geolocation){
+                    document.querySelector('h1').innerHTML = 'Geolocation is not supported by your browser';
+                } else {
+                    document.querySelector('h1').innerHTML = 'Locating the place...';
+                    navigator.geolocation.watchPosition(success,error);
+                    //watchPosition looks for device location change if it happens it notify the application
+                    //getCurrentPosition gives current location of the device for a single time.
+                }
+
+                function success(position){
+                    document.querySelector('h1').innerHTML = "latitude : " + position.coords.latitude + "<br> longitude : " + position.coords.longitude;
+                }
+
+                function error(){
+                    document.querySelector('h1').innerHTML = "error";
+                }
+            })
+        </script>
+    
+
+    </body>
+</html>
