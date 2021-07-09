@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="HTML Coding">
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Hamshini Kannan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Other_tags.css">
+        <title>Other Tags</title>
+    </head>
+    <body>
+        <p>Here I am working on <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+        <div>
+            <p>The sentence is easy to read from left to right.</p>
+            <p><bdo dir="rtl">The sentence is easy to read from left to right.</bdo></p>     
+        </div>
+        <p>More information can be found in <cite>[ISO-000]</cite>.</p>
+        <details>
+            <summary>Garden Up - My Favourite Gardening Website</summary>
+            <blockquote cite="https://www.gardenup.in/">
+                Garden Up was born out of an urge to convert a tiny hostel room into a private little sanctuary. 
+                Should have been easy, there was no dearth of content explaining the 'how to'.
+                The only trouble was a researcher's mind, fixated with the 'why'.
+            </blockquote>
+            
+        </details>
+        
+        <audio src="audiofile.mp3" controls></audio>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>Hamshini </td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <td>Kamali </td>
+                <td>IT</td>
+            </tr>
+        </table>
+        <dl>
+            <dt>Dance</dt>
+            <dd>Bharatanatyam</dd>
+            <dd>Kuchipudi</dd>
+            <dd>Kathakali</dd>
+            <dt>Animal</dt>
+            <dd>Nilgiri Tahr</dd>
+            <dd>Blackbuck</dd>
+            <dd>Indian Elephant</dd>
+        </dl>
+        <figure>
+            <embed type="image/jpg" src="images/teddy.jpg" width="300" height="200">
+            <img src="images/Gardening.jpg" alt="Gardening" width="300" >
+            <figcaption>Gardening</figcaption>
+        </figure>
+        <h3>All the world’s a stage -<span style="color:yellowgreen;font-weight:bold">William Shakespeare</span> </h3>
+        <pre>
+            All the world’s a stage,
+            And all the men and women merely players;
+            They have their exits and their entrances;
+            And one man in his time plays many parts,
+            His acts being seven ages.
+        </pre>
+        <div class="notebox">
+            This is an informational note.
+        </div>
+        
+        <div class="notebox warning">
+            This note shows a warning.
+        </div>
+        <ul class="grocery" >
+            <li><data value="300">Tomato</data></li>
+            <li><data value="305">Ice-cream</data></li>
+        </ul>
+        <p>The <code>Style</code> element is used to give style to the content</p>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+        <div >
+            <p>Do not forget to buy <mark>gift</mark> today.</p>
+            <p>Shop is open till <time>5.00 PM</time></p>
+        
+        </div>
+        <p>The area of a Rectangle is: <var>l</var> x <var>b</var>, 
+            where <var>l</var> is the length, and <var>b</var> is the breadth.</p>
+        <p><q>Tintern Abbey</q> is William Wordsworth's most famous poems</p>
+        <video src="rabbit320.mp4" controls >
+            <param name="autoplay" value="true">
+        </video>
+        <video controls width="400" height="200" loop muted preload="auto" poster="images/poster.png">
+            <source src="rabbit320.mp4" type="video/mp4">
+            
+        </video>
+        <div  contenteditable="true">
+            You can edit this content here.
+        </div>
+        <ruby>
+            漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+        </ruby>
+        <p><s>Only 50 tickets left!</s></p>
+        <p>SOLD OUT!</p>
+        <br>
+        <picture>
+            <img src="images/icecream.jpg" alt="Ice-cream" width="300" height="300">
+        </picture>
+        <p>Message from my computer:</p>
+        <p><samp>Storage Full<br>Delete the files</samp></p>
+        <label for="disk_c">Disk usage C:</label>
+            <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+        <label for="disk_d">Disk usage D:</label>
+            <meter id="disk_d" value="0.6">60%</meter>
+            <br>
+        <label for="File">Downloading Progress</label>
+        <progress id="File" value="85" max="100"> 85% </progress>
+        <form action="">
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+            </datalist>
+            <input type="submit">
+        </form>
+        <textarea id="review" name="review" rows="4" cols="50">
+            I prefer using Chrome because its convenient to use and
+             the speed is high when compared to others
+        </textarea>
+        <base href="https://www.aspiresys.com/">
+    </body>
+</html>
