@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery concept</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").hide();
+                });
+            });
+
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color", "yellow");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "blue");
+                });
+            });
+
+            $(document).ready(function(){
+                $("p").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "lightgray");
+                    },  
+                    mouseleave: function(){
+                        $(this).css("background-color", "lightblue");
+                    }, 
+                    click: function(){
+                        $(this).css("background-color", "yellow");
+                    }  
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>This is a heading</h2>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <button>Click me</button><br><br>
+
+        Name: <input type="text" name="fullname"><br><br>
+        Email: <input type="text" name="email">
+
+    </body>
+</html>
