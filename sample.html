@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample</title>
+        <style>
+            table,th,td {
+                border: 1px solid black;
+            }
+            @media  screen and (min-width: 300px)and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <p id="result"></p>
+        <p id="demo"></p>
+        <table>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+              <th>Savings for holiday!</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+              <td rowspan="2">$50</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$80</td>
+            </tr>
+          </table>
+          
+        <script>
+            //var variable
+            var tester = "hey hi";
+            function newFunction() {
+                var hello = "hello";
+            }
+            console.log(hello); // error - hello is not defined
+
+            //let variable
+            let greeting = "say Hi";
+            let times = 4;
+            if (times > 3) {
+                let hello = "say Hello instead";
+                console.log(hello);//say Hello instead
+            }
+            console.log(hello) // hello - not defined
+
+
+            let greeting = "say Hi";
+            if (true) {
+                let greeting = "say Hello instead";
+                console.log(greeting); // say Hello instead
+            }
+            console.log(greeting); // say Hi
+
+            //const variable
+            const greeting = "say Hi";
+            greeting = "say Hello instead";// can't be updated - error
+
+            const greeting = "say Hi";
+            const greeting = "say Hello instead";//can't be redeclared - error
+            
+            //const object
+            const greeting = {
+                message: "say Hi",
+                times: 4
+            }
+
+            //regular expression
+            let cartoonCrying = /boo+(hoo+)+/i;
+            console.log(cartoonCrying.test("Boohoooohoohooo"));
+
+            var pattern = /lo*/g;
+            console.log(pattern.test("Hellooo World! looking good")); 
+
+            //arrays
+            let fruits = ['Apple', 'Banana','Strawberry']
+            let newLength = fruits.push('Orange');//apple,banana,orange,strawberry
+            let last = fruits.pop(); // apple,banana,orange
+            let list = fruits.slice(1,3)//banana,orange
+
+            //array filter
+            const ages = [32, 33, 16, 40];
+            document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+            function checkAdult(age) {
+                return age >= 18;
+            }
+        </script>
+    </body>
+</html>
