@@ -78,6 +78,13 @@
 
             var pattern = /lo*/g;
             console.log(pattern.test("Hellooo World! looking good")); 
+            //minlength,maxlength
+            var exp =/^[a-zA-Z]{3,8}$/;
+            console.log(exp.test("Maximum"));//true 
+
+            var exp =/^[a-zA-Z]{8,16}$/;
+            console.log(exp.test("Maximum"));//false
+
 
             //arrays
             let fruits = ['Apple', 'Banana','Strawberry']
