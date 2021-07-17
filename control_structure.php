@@ -83,7 +83,7 @@ switch ($i) {
     case 2:
         echo "i equals 2";
         break;
-  default:
+    default:
         echo "i is not equal to 0,1 and 2"; 
 }
 
