@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Newform.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Donate Us</h2>
+            </div>
+            <form action="" method="POST"  onsubmit=" event.preventDefault(); validate();" class="form">
+                <div class="form-control">
+                    <table class="field">
+                        <tr>
+                            <td><label for="username" name="username">Name</label></td>
+                            <td>
+                                <input id="txtUserName" type="text" name="username"/><br>
+                                <span id="name_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email" name="email">Email</label></td>
+                            <td>
+                                <input id="txtEmail" type="text" name="email"/><br>
+                                <span id="email_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="num" name="num">Amount</label></td>
+                            <td>
+                                <input id="txtnum" type="number"min="1000" step="1000" name="num"/><br>
+                                <span id="amount_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="comments" name="comments">Comments</label></td>
+                            <td>
+                                <textarea id="comments"></textarea><br>
+                                <span id="comments_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="date" name="date">Date</label></td>
+                            <td>
+                                <input id="date" type="date" name="date"/><br>
+                                <span id="date_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="donationtype">Donation type</label></td>
+                            <td>
+                                <div id=donationtype>
+                                    <input type="radio" id="rd1" name="donationtype" value="1" name="donationtype"/>
+                                    <label>Regular</label>
+                                    <input type="radio" id="rd2" name="donationtype" value="2" name="donationtype"/>
+                                    <label>Occasion</label><br>
+                                
+                                </div>
+                                <span id="type_error_message"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="occasion" name="occasion">Occasion</label></td>
+                            <td>
+                                <table>
+                                    <div id=occasion>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="pongal" name="occasion" value="Pongal"/>
+                                                <label>Pongal</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="Diwali" name="occasion" value="Diwali"/>
+                                                <label>Diwali</label><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="Republic Day" name="occasion" value="RepublicDay"/>
+                                                <label>Republic Day</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="Birthday" name="occasion" value="Birthday"/>
+                                                <label>Birthday</label><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="Independence Day" name="occasion" value="IndependenceDay"/>
+                                                <label>Independence Day</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="New Year" name="occasion" value="NewYear"/>
+                                                <label>New Year</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="Ramzan" name="occasion" value="Ramzan"/>
+                                                <label>Ramzan</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="Christmas" name="occasion" value="Christmas"/>
+                                                <label>Christmas</label>
+                                            </td>
+                                        </tr>
+                                    </div>
+                                </table>
+                                <span id="occasiontype_error_message"></span> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Upload</label></td>
+                            <td>
+                                <input type="file" id="filename"><br>
+                                <span id="fileupload_error_message"></span>
+                            </td>
+                        </tr>
+                    </table><br> 
+                    <div class="btn"> 
+                        <input type="submit" value="submit">
+                    </div>       
+                </div>
+            </form>
+        </div>
+        <script src="testdemo.js"></script>
+    </body>
+</html>
