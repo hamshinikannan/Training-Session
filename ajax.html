@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program with ajax</title>
+        <script>
+            function showHint(str) {
+                if (str.length == 0) {
+                    document.getElementById("txtHint").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest(); //Create an XMLHttpRequest object
+                    xmlhttp.onreadystatechange = function() { //Execute the function when the server response is ready
+                        //onreadystatechange - document has finished loading
+                        if (this.readyState == 4 && this.status == 200) {
+                            //4 - request finished and response is ready, 200 - OK 
+                            //The onreadystatechange function is called every time the readyState changes.
+                            //When readyState is 4 and status is 200, the response is ready:
+                            document.getElementById("txtHint").innerHTML = this.responseText;
+                        }
+                    }
+                    xmlhttp.open("GET", "ajax.php?q=" + str, true); //Send the request to a PHP file (gethint.php) on the server
+                    //str variable holds the content of the input field
+                    xmlhttp.send();
+                }
+            }
+        </script>    
+    </head>
+    <body>
+        <p><b>Start typing a name in the input field below:</b></p>
+        <form action="">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
+        </form>
+        <p>Suggestions: <span id="txtHint"></span></p>
+    </body>
+</html>
