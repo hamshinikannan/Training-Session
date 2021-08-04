@@ -17,9 +17,9 @@ class Model{
             $email = $_POST['email'];
             $password = $_POST['password'];
             $fileUpload = $_POST['fileupload'];
-
             /*
              * checking whether all the given fields are not empty
+             * @return Boolean
              */ 
             if(!empty($username) && !is_numeric($username) && !empty($email) && !empty($password) && !empty($fileUpload)){
                 $sql = "INSERT INTO useraccount (username,email,password,fileupload)

@@ -13,16 +13,15 @@ class Model{
         if(isset($_GET['id'])){
             $id = $_GET['id'];
             
-        $sql = "SELECT * FROM useraccount WHERE id=$id ";
-        $result = mysqli_query($con,$sql);
-
-        $row = mysqli_fetch_assoc($result);
+            $sql = "SELECT * FROM useraccount WHERE id=$id ";
+            $result = mysqli_query($con,$sql);
+            $row = mysqli_fetch_assoc($result);
         
-        $username = $row['username'];
-        $email = $row['email'];
-        $password = $row['password'];
-        $fileUpload = $row['fileupload'];
-        return $id;
+            $username = $row['username'];
+            $email = $row['email'];
+            $password = $row['password'];
+            $fileUpload = $row['fileupload'];
+            return $id;
         }
     
 
