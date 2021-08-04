@@ -161,7 +161,7 @@
                     </div>
                     <div class="footer-col-4">
                         <h3>Donate</h3>
-                        <p>Help Us Change the Lives of <br> Children in World</p>
+                        <p>Help Us to Change the Lives of <br> Children in World</p>
                     </div>
                     </div>
                         <hr>
